@@ -23,7 +23,7 @@ To run TriLife you will need [Bash](https://git-scm.com/downloads/), [Node](http
 
 First, users should login or create a loging to be able to save their input.
 
-![User: Login/Register](client/src/Images/login.png)
+![User: Login/Register]
 
 Logging in brings users to the Home page, where users can learn about the application, add their free time, or view their calendar
 
