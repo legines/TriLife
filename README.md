@@ -23,24 +23,24 @@ To run TriLife you will need [Bash](https://git-scm.com/downloads/), [Node](http
 
 First, users should login or create a loging to be able to save their input.
 
-![User: Login/Register](./client/src/images/login.png)
+![User: Login/Register](client/src/Images/login.png)
 
 Logging in brings users to the Home page, where users can learn about the application, add their free time, or view their calendar
 
-![User: Home Page](./client/src/images/home.png)
+![User: Home Page](./client/src/Images/home.png)
 
 In the add time screen users can input their free time and can add notes describing the activities they want to accomplish and hours they want to devote to them.
 
-![User: Add Time](./client/src/images/addtime.png)
+![User: Add Time](./client/src/Images/addtime.png)
 
 Once free time has been entered, it is stratified into each category and saved into a mongo db. Clicking the link beneath the submit button will bring the user to the calendar page along with their input.
 
-![User: Added Time](./client/src/images/added.png)
+![User: Added Time](./client/src/Images/added.png)
 
 On the same page clicking (!) will open up a modal displaying users notes.
 
-![User: Modal](./client/src/images/added_modal.png)
+![User: Modal](./client/src/Images/added_modal.png)
 
 The calendar page displays the saved user input and allows users to add activities to their calendar by clicking on the add button. Users can also delete items by clicking the 'X' on the button.
 
-![User: Add Time](./client/src/images/calendar.png)
+![User: Add Time](./client/src/Images/calendar.png)
