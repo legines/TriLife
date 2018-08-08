@@ -6,7 +6,7 @@ const path = require('path');
 
 const mongoose = require("mongoose");
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/mern-secure', { promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_SERVER}', { promiseLibrary: require('bluebird') })
   .then(() => console.log('connection successful'))
   .catch((err) => console.error(err));
 

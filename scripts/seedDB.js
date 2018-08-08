@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/freetime"
+  "mongodb://legines:giveUPdaG00ds@ds115762.mlab.com:15762/heroku_gzwmv8x5"
 );
 
 const hourSeed = [
