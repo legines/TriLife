@@ -6,7 +6,7 @@ const path = require('path');
 
 const mongoose = require("mongoose");
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_SERVER}', { promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://localhost/mern-secure', { promiseLibrary: require('bluebird') })
   .then(() => console.log('connection successful'))
   .catch((err) => console.error(err));
 
@@ -25,7 +25,9 @@ app.use(routes);
 
 // Connect to the Mongo DB
 //mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
-
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 // Start the API server
 app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
